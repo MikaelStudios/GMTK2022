@@ -55,6 +55,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &146360
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,6 +197,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -204,6 +210,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -216,6 +223,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &192742
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,13 +286,13 @@ MonoBehaviour:
   startHitPointAtFull: 1
   hpRegenRate: 0
   hpRegenStagger: 5
-  energyFull: 10
+  energyFull: 1
   energy: 0
-  energyRate: 5
+  energyRate: 1
   startEnergyAtFull: 1
   armorType: 0
   anchorDown: 0
-  moveSpeed: 7.5
+  moveSpeed: 12
   brakeRange: 2
   rotateSpeed: 10
   target: {fileID: 0}
@@ -380,8 +388,8 @@ MonoBehaviour:
   enabledMovementX: 1
   enabledMovementZ: 1
   movementMode: 1
-  acceleration: 5
-  decceleration: 5
+  acceleration: 9.5
+  decceleration: 9.5
   boostEnergyRate: 0.2
   boostMultiplier: 2
   activeBrakingRate: 5
