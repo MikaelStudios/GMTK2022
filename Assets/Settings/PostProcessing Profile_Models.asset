@@ -137,12 +137,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: PostProcessing Profile
+  m_Name: PostProcessing Profile_Models
   m_EditorClassIdentifier: 
   components:
   - {fileID: -3750096459338296987}
   - {fileID: -8296297753749067026}
-<<<<<<< Updated upstream
   - {fileID: 6785133516352777654}
 --- !u!114 &6785133516352777654
 MonoBehaviour:
@@ -196,6 +195,3 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
     min: 0
-=======
-  - {fileID: -6091556459001164318}
->>>>>>> Stashed changes
