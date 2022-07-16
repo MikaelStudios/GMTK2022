@@ -21,12 +21,13 @@ public class TextmeshproEventInvoker : MonoBehaviour
         if (!m_notObject)
             m_text = GetComponent<TextMeshProUGUI>();
     }
-    private void Start()
-    {
-        OnEnable();
-    }
     bool isPlayerPrefs() { return true; }
     private void OnEnable()
+    {
+        SetTextValue();
+    }
+
+    public void SetTextValue()
     {
         switch (playerPrefsDataType)
         {
@@ -38,16 +39,13 @@ public class TextmeshproEventInvoker : MonoBehaviour
                 InvokeStr(PlayerPrefs.GetString(m_prefKey));
                 break;
             case PlayerPrefsDataType.WAVE:
-                InvokeStr("Wave " + GetComponent<IntEventListener>().Event.m_previousValue + " / 5");
+                GetComponent<TextMeshProUGUI>().text = "Wave " + GetComponent<IntEventListener>().Event.m_previousValue + " / 5";
                 break;
 
             case PlayerPrefsDataType.INT:
                 Invoke(PlayerPrefs.GetInt(m_prefKey));
                 break;
-
         }
-
-
     }
     public void Invoke(int _i)
     {

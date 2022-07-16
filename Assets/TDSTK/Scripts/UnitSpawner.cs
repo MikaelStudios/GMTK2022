@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using TDSTK;
+using UnityEngine.Events;
 
 namespace TDSTK{
 	
@@ -81,8 +82,8 @@ namespace TDSTK{
 		private int activeCount=0;	//the total unit currently active in the game
 		private int spawnCount=0;	//the total unit that has been spawned
 		
-		private int killCount=0;		//the total unit that has been destroyed
-		
+		private int killCount=0;        //the total unit that has been destroyed
+		public IntEvent onClearedWave;
 		
 		
 		
@@ -124,12 +125,12 @@ namespace TDSTK{
 			UnitSpawnerTracker.AddSpawner(this);
 			
 			if(overrideHitPoint) spawnHP=startingHitPoint;
-			
+
 			//if spawnUponStart is enabled, start spawning
-			if(spawnUponStart) StartSpawn();
+			if (spawnUponStart) StartSpawn();
 		}
-		
-		
+
+
 		void OnDisable(){
 			//if the spawner is destroyed, consider it cleared
 			Cleared();
@@ -164,6 +165,7 @@ namespace TDSTK{
 			if(spawnMode==_SpawnMode.WaveBased){
 				if(!endlessWave) SpawnWaveFromList(startDelay);
 				else SpawnGeneratedWave(startDelay);
+				onClearedWave.Raise(currentWaveIDX + 1);
 			}
 			else if(spawnMode==_SpawnMode.FreeForm){
 				StartCoroutine(SpawnFreeForm());
@@ -174,7 +176,7 @@ namespace TDSTK{
 		//spawn the next wave in wavelist
 		void SpawnWaveFromList(float delay=0){
 			//if we have past the final wave, stop and clear the spawner
-			if(currentWaveIDX+1>=waveList.Count){
+			if (currentWaveIDX+1>=waveList.Count){
 				Debug.Log(gameObject.name+" - all waves cleared");
 				Cleared();
 				return;
@@ -190,8 +192,7 @@ namespace TDSTK{
 			yield return new WaitForSeconds(delay);
 			
 			Debug.Log(gameObject.name+" - start spawning wave "+currentWaveIDX);
-			
-			if(currentWaveIDX>0) spawnHP+=hitPointIncrement;
+			if (currentWaveIDX>0) spawnHP+=hitPointIncrement;
 			
 			if(wave.subWaveList.Count==0) Debug.LogWarning("Trying to spawn an empty wave", thisT);
 			
@@ -265,6 +266,7 @@ namespace TDSTK{
 			
 			//if the wave is cleared
 			if(waveCleared){
+				onClearedWave.Raise(currentWaveIDX + 1);
 				Debug.Log(gameObject.name+" - wave "+(currentWaveIDX-1)+" cleared");
 				Debug.Log("");
 			}
