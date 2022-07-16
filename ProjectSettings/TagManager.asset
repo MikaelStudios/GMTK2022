@@ -13,12 +13,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Unit_Player
+  - Unit_AI
+  - ShootObject
+  - Collectible
+  - Trigger
+  - Terrain
   - 
   - 
   - 
