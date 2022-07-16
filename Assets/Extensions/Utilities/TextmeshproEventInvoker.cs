@@ -28,7 +28,6 @@ public class TextmeshproEventInvoker : MonoBehaviour
     bool isPlayerPrefs() { return true; }
     private void OnEnable()
     {
-
         switch (playerPrefsDataType)
         {
             case PlayerPrefsDataType.FLOAT:
@@ -37,6 +36,9 @@ public class TextmeshproEventInvoker : MonoBehaviour
 
             case PlayerPrefsDataType.STRING:
                 InvokeStr(PlayerPrefs.GetString(m_prefKey));
+                break;
+            case PlayerPrefsDataType.WAVE:
+                InvokeStr("Wave " + GetComponent<IntEventListener>().Event.m_previousValue + " / 5");
                 break;
 
             case PlayerPrefsDataType.INT:
@@ -138,7 +140,7 @@ public class TextmeshproEventInvoker : MonoBehaviour
     }
     public enum PlayerPrefsDataType
     {
-        FLOAT, STRING, INT, None
+        FLOAT, STRING, INT, WAVE,None
     }
     public enum Parameters
     {
