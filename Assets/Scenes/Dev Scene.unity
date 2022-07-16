@@ -2945,10 +2945,10 @@ MonoBehaviour:
   valueEnergy: 0
   valueExp: 0
   valuePerkC: 0
-  destroyCamShake: 1
+  destroyCamShake: 5
   destroyedEffectObj: {fileID: 161024, guid: 5c3743fc87a42484db9b6e79f25f2c63, type: 3}
   autoDestroyDObj: 1
-  dObjActiveDuration: 2
+  dObjActiveDuration: 5
   useDropManager: 1
   dropObject: {fileID: 0}
   dropChance: 0.5
@@ -3464,9 +3464,9 @@ MonoBehaviour:
   startHitPointAtFull: 1
   hpRegenRate: 0
   hpRegenStagger: 5
-  energyFull: 10
+  energyFull: 100
   energy: 0
-  energyRate: 0.5
+  energyRate: 100
   startEnergyAtFull: 1
   armorType: 0
   anchorDown: 0
@@ -15274,7 +15274,7 @@ MonoBehaviour:
   activeLimit: 5
   limitSpawnCount: 20
   limitSpawnTime: 120
-  limitType: 0
+  limitType: 2
 --- !u!1 &990619277
 GameObject:
   m_ObjectHideFlags: 0
@@ -15391,7 +15391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 15}
+  m_AnchoredPosition: {x: 50, y: -2}
   m_SizeDelta: {x: 179.99997, y: 14.9999695}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &996818008
@@ -17208,7 +17208,7 @@ MonoBehaviour:
   valueEnergy: 0
   valueExp: 0
   valuePerkC: 0
-  destroyCamShake: 1
+  destroyCamShake: 2
   destroyedEffectObj: {fileID: 161024, guid: 5c3743fc87a42484db9b6e79f25f2c63, type: 3}
   autoDestroyDObj: 1
   dObjActiveDuration: 2

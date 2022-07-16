@@ -135,11 +135,11 @@ MonoBehaviour:
   - {fileID: 437088}
   shootPointDelay: 0.05
   continousFire: 1
-  range: 40
-  cooldown: 0.1
+  range: 20
+  cooldown: 0.12
   currentCD: 0
   useEnergyAsAmmo: 1
-  energyCost: 0
+  energyCost: -1
   clipSize: 30
   currentClip: 30
   ammoCap: 300
@@ -164,7 +164,7 @@ MonoBehaviour:
     explosionForce: 5
     effectID: -1
     effectIdx: -1
-  shootSFX: {fileID: 8300000, guid: 370e8e9394c2dfd498dc286b791deb12, type: 3}
+  shootSFX: {fileID: 8300000, guid: 3061c7b9b32d894478e4126ccce25ca3, type: 3}
   reloadSFX: {fileID: 8300000, guid: 35f76970bbd3dbb4f9ff3ef761889c19, type: 3}
   temporary: 0
   abilityID: 3

@@ -113,7 +113,7 @@ MonoBehaviour:
       effectID: -1
       effectIdx: -1
   hideObject: {fileID: 150996}
-  projectileDestroyDelay: 1
+  projectileDestroyDelay: 0.01
   splitUponHit: 0
   splitCount: 8
   splitRange: 15
