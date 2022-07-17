@@ -11897,6 +11897,7 @@ GameObject:
   - component: {fileID: 605768957}
   - component: {fileID: 613965599}
   - component: {fileID: 619106929}
+  - component: {fileID: 608891478}
   m_Layer: 8
   m_Name: Player_AnimatedDummy
   m_TagString: Untagged
@@ -11904,6 +11905,62 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &608891478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608891477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 333be4d5ec98615449e876b820751752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enablePerk: 0
+  perkCurrency: 20
+  perkPoint: 0
+  unavailableIDList: 030000000400000005000000060000000f0000000e0000000700000008000000090000000a0000000b0000000c0000000d000000
+  purchasedIDList: 
+  perkList: []
+  player: {fileID: 0}
+  init: 0
+  hitPointCap: 0
+  hitPointRegen: 0
+  energyCap: 0
+  energyRegen: 0
+  moveSpeedMul: 0
+  damageMul: 0
+  critMul: 0
+  critMulMul: 0
+  expGainMul: 0
+  creditGainMul: 0
+  scoreGainMul: 0
+  hitPointGainMul: 0
+  energyGainMul: 0
+  weapStatG:
+    prefabID: 0
+    dmg: 0
+    crit: 0
+    critMul: 0
+    aoe: 0
+    range: 0
+    cooldown: 0
+    clipSize: 0
+    ammoCap: 0
+    reloadDuration: 0
+    recoilMagnitude: 0
+  weapStatList: []
+  abilityStatG:
+    prefabID: 0
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+  abilityStatList: []
 --- !u!4 &609108651
 Transform:
   m_ObjectHideFlags: 0
@@ -23042,7 +23099,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.8490566, g: 0.81359786, b: 0.7168921, a: 1}
   m_Intensity: 0.39
   m_Range: 10
   m_SpotAngle: 30
