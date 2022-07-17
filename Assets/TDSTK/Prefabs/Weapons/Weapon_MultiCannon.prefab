@@ -383,8 +383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 7
-  icon: {fileID: 21300000, guid: 83bba2fef1811af4ea93e067de6e54c2, type: 3}
-  weaponName: MultiCannon
+  icon: {fileID: 21300000, guid: 01e07f3e1822dac47911c2d5a3d8840b, type: 3}
+  weaponName: Cannon Mode
   desp: 
   shootObject: {fileID: 133948, guid: 85c91927388385549b50dce9b5e5c07e, type: 3}
   shootPointList:
@@ -398,15 +398,15 @@ MonoBehaviour:
   currentCD: 0.25
   useEnergyAsAmmo: 0
   energyCost: 2
-  clipSize: 50
+  clipSize: -1
   currentClip: 29
-  ammoCap: 0
+  ammoCap: -1
   ammo: 300
   reloadDuration: 0
   currentReload: 0
   recoilMagnitude: 0
   recoil: 1
-  recoilCamShake: 0
+  recoilCamShake: 1
   spread: 1
   spreadAngle: 15
   aStats:
