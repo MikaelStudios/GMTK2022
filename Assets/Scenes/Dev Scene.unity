@@ -17342,54 +17342,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c9c09e3e7047b45a6f695dd2b988a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnUponStart: 0
+  spawnUponStart: 1
   spawnArea: {fileID: 0}
   startDelay: 5
-  spawnCD: 20
-  maxItemCount: 5
-  spawnChance: 0.1
-  failModifier: 0
-  spawnItemList:
-  - item: {fileID: 11444902, guid: e1f7ac2b4f54e2d439d8523d0744e7dc, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11444902, guid: 5ed0dc026583269468be2b3f12f4778d, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11444902, guid: 4f201c45f1175a84e8a4d5c3ba702478, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11444902, guid: 6359513a23c16834397fa1d9a5da9605, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11477040, guid: b4f774f35a6434d47a91e14a1b18e5e7, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11420194, guid: fc8b27e838294574a86918284d2fbd14, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11469412, guid: 376909417189eb542b1fdf05778ea0a6, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11447456, guid: 4e8d090e4b585324eb3f609d4ebca8d7, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 11435810, guid: 88726b9bf8f244344acaf73c9152fa00, type: 3}
-    chance: 0.5
-    cooldown: 40
-    currentCD: 0
-  - item: {fileID: 0}
-    chance: 0.5
-    cooldown: 10
-    currentCD: 0
+  spawnCD: 10
+  maxItemCount: 1
+  spawnChance: 0.2
+  failModifier: 0.1
+  spawnItemList: []
 --- !u!1 &923277671
 GameObject:
   m_ObjectHideFlags: 0
@@ -22474,7 +22434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1244612308
 Transform:
   m_ObjectHideFlags: 0
@@ -22662,7 +22622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1262544603
 Transform:
   m_ObjectHideFlags: 0
@@ -22694,8 +22654,8 @@ MonoBehaviour:
   spawnArea: {fileID: 2147430886}
   startDelay: 1
   spawnCD: 10
-  maxItemCount: 1
-  spawnChance: 1
+  maxItemCount: 0
+  spawnChance: 0
   failModifier: 0.1
   spawnItemList: []
 --- !u!1 &1262648820

@@ -231,7 +231,7 @@ MonoBehaviour:
   destroyedEffectObj: {fileID: 492971157001852661, guid: a6bcf5782dd699d4d90e0e3c44aa6d2b, type: 3}
   autoDestroyDObj: 1
   dObjActiveDuration: 5
-  useDropManager: 1
+  useDropManager: 0
   dropObject: {fileID: 0}
   dropChance: 0.5
   spawnUponDestroy: {fileID: 0}
