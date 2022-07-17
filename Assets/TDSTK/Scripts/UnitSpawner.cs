@@ -278,6 +278,7 @@ namespace TDSTK{
 						unlockedPipImage.sprite = waveList[waveID].m_unlockedWeapon.icon;
 					m_onWaveWonPanelOpened.Raise();
 					m_pips[waveID].SetActive(true);
+					MusicManager.instance.PlayIndex(waveID, GameControl.GetPlayer().weaponList.Count - 1);
 					if (waveList[waveID].m_unlockedWeapon != null)
                     {
 						GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);

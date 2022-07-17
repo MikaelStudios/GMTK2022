@@ -167,6 +167,7 @@ namespace TDSTK_UI{
 					if(delayTracker >= weaponSwitchDelay)
                     {
 						player.ScrollWeapon(Input.GetAxis("Mouse ScrollWheel") > 0 ? 1 : -1);
+						MusicManager.instance.PlayIndex(GameControl.GetPlayer().weaponList.Count - 1, GameControl.GetPlayer().weaponID);
 						delayTracker = 0f;
 					}
 
