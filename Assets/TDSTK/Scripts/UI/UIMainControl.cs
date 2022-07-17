@@ -60,7 +60,7 @@ namespace TDSTK_UI{
 		[Tooltip("The CanvasScaler components of all the canvas. Required to have the floating UI elements appear in the right screen position")]
 		public List<CanvasScaler> scalerList=new List<CanvasScaler>();
 
-		private const float weaponSwitchDelay = 5f;
+		private const float weaponSwitchDelay = 10f;
 		private float delayTracker = 0;
 		public static float GetScaleFactor(){ 
 			if(instance.scalerList.Count==0) return 1;

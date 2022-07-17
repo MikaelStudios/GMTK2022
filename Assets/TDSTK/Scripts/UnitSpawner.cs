@@ -86,7 +86,7 @@ namespace TDSTK{
 		public IntEvent onClearedWave;
 		public GameEvent m_onWaveWonPanelOpened;
 		public StringEvent m_onUnlockedNewWeapon;
-		
+		public List<GameObject> m_pips;
 		
 		private Transform thisT;
 		void Awake(){
@@ -272,6 +272,7 @@ namespace TDSTK{
 				if((waveID+1) < waveList.Count && waveList[waveID].m_unlockedWeapon != null)
                 {
 					m_onWaveWonPanelOpened.Raise();
+					m_pips[waveID].SetActive(true);
 					GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);
 					m_onUnlockedNewWeapon.Raise(waveList[waveID].m_unlockedWeapon.weaponName);
 				}
