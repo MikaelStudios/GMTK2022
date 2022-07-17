@@ -39,7 +39,7 @@ public class TextmeshproEventInvoker : MonoBehaviour
                 InvokeStr(PlayerPrefs.GetString(m_prefKey));
                 break;
             case PlayerPrefsDataType.WAVE:
-                GetComponent<TextMeshProUGUI>().text = "Wave " + GetComponent<IntEventListener>().Event.m_previousValue + " / 5";
+                GetComponent<TextMeshProUGUI>().text = "Wave " + GetComponent<IntEventListener>().Event.m_previousValue + " / 6";
                 break;
 
             case PlayerPrefsDataType.INT:
