@@ -25,7 +25,9 @@ public class MusicManager : MonoBehaviour
             {
                 MusicChannels[j].ads[o].volume = 0;
             }
+            MusicChannels[j].baseMusic.volume = j == wave ? 1 : 0;
         }
+
         for (int i = 0; i < MusicChannels[wave].ads.Length; i++)
         {
             if (i == index)
@@ -45,6 +47,7 @@ public class MusicManager : MonoBehaviour
     [System.Serializable]
     public class WaveSource
     {
+        public AudioSource baseMusic;
         public AudioSource[] ads;
     }
 }
