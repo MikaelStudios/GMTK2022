@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
-  icon: {fileID: 21300000, guid: 678f26ff0ee152a459b93b04d52316cd, type: 3}
-  weaponName: Machine Gun
+  icon: {fileID: 21300000, guid: bde03f1439c2eab45b1239a8133ac2fd, type: 3}
+  weaponName: Basic Mode
   desp: 
   shootObject: {fileID: 150996, guid: fd5c6fe2dc097e64396b02908f6b32b8, type: 3}
   shootPointList:
@@ -138,11 +138,11 @@ MonoBehaviour:
   range: 20
   cooldown: 0.12
   currentCD: 0
-  useEnergyAsAmmo: 1
+  useEnergyAsAmmo: 0
   energyCost: -1
   clipSize: 30
   currentClip: 30
-  ammoCap: 300
+  ammoCap: -1
   ammo: 300
   reloadDuration: 0
   currentReload: 0

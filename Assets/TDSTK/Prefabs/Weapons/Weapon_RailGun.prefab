@@ -55,6 +55,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &134440
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,8 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 10
-  icon: {fileID: 21300000, guid: 678f26ff0ee152a459b93b04d52316cd, type: 3}
-  weaponName: RailGun
+  icon: {fileID: 21300000, guid: c42a9ad15a3701342b59c86101fd8f59, type: 3}
+  weaponName: Rail Gun Mode
   desp: 
   shootObject: {fileID: 150996, guid: 379e5349388bf79439752c88f2bde364, type: 3}
   shootPointList:
@@ -138,7 +142,7 @@ MonoBehaviour:
   energyCost: 2
   clipSize: 30
   currentClip: 30
-  ammoCap: 300
+  ammoCap: -1
   ammo: 300
   reloadDuration: 5
   currentReload: 0
@@ -150,7 +154,7 @@ MonoBehaviour:
   aStats:
     damageType: 0
     damageMin: 3
-    damageMax: 6
+    damageMax: -1
     aoeRadius: 0
     diminishingAOE: 1
     critChance: 0.15
