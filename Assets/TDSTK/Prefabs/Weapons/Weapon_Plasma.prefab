@@ -48,13 +48,15 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113738}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &122324
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,8 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 4
-  icon: {fileID: 21300000, guid: b2474d2f24b554741a9d5fbca8f28b06, type: 3}
-  weaponName: Plasma
+  icon: {fileID: 21300000, guid: 01e07f3e1822dac47911c2d5a3d8840b, type: 3}
+  weaponName: Cannon Split Mode
   desp: 
   shootObject: {fileID: 126576, guid: 0789299050369a34e958a4b3fe273bdd, type: 3}
   shootPointList:
@@ -136,9 +140,9 @@ MonoBehaviour:
   currentCD: 0
   useEnergyAsAmmo: 0
   energyCost: 2
-  clipSize: 1
+  clipSize: -1
   currentClip: 1
-  ammoCap: 50
+  ammoCap: -1
   ammo: 500
   reloadDuration: 1
   currentReload: 0
@@ -160,7 +164,7 @@ MonoBehaviour:
     explosionForce: 2
     effectID: -1
     effectIdx: -1
-  shootSFX: {fileID: 8300000, guid: 667b340e93d22ea4c80ebce683a4af5c, type: 3}
+  shootSFX: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
   reloadSFX: {fileID: 8300000, guid: 35f76970bbd3dbb4f9ff3ef761889c19, type: 3}
   temporary: 0
   abilityID: 0

@@ -19392,7 +19392,7 @@ MonoBehaviour:
     creditGain: 0
     scoreGain: 0
     spawnArea: {fileID: 0}
-    m_unlockedWeapon: {fileID: 11488150, guid: 751f6e7e3655f2548bc041206c06409e, type: 3}
+    m_unlockedWeapon: {fileID: 11459320, guid: ea78b65e7d62f284e80f8d825d4acd38, type: 3}
     activeUnitCount: 0
     subWaveSpawned: 0
     spawned: 0
