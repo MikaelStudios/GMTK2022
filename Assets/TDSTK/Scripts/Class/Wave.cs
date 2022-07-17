@@ -29,6 +29,8 @@ namespace TDSTK{
 		public int scoreGain=0;
 		
 		public TDSArea spawnArea;
+
+		public Weapon m_unlockedWeapon;
 		
 		[HideInInspector] public int activeUnitCount=0;	//only used in runtime
 		

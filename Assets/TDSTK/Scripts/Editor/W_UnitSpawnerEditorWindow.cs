@@ -482,9 +482,14 @@ namespace TDSTK {
 						cont=new GUIContent("Score:", "The score gained upon clearing the wave");
 						EditorGUI.LabelField(new Rect(startX+110, startY, width, height), cont);
 						wave.scoreGain=EditorGUI.IntField(new Rect(startX+154, startY, 40, height), wave.scoreGain);
-						
-						
-						GUI.color=new Color(1f, 0.7f, 0.7f, 1f);
+
+						startY += 25;
+
+						cont = new GUIContent("Unlocked weapon:", "The unlocked weapon during the wave");
+                        EditorGUI.LabelField(new Rect(startX, startY, width, height), cont);
+                        wave.m_unlockedWeapon = (Weapon)EditorGUI.ObjectField(new Rect(startX + 130, startY, 180, height), wave.m_unlockedWeapon, typeof(Weapon), true);
+
+                        GUI.color=new Color(1f, 0.7f, 0.7f, 1f);
 						if(GUI.Button(new Rect(startX+585, startY, 55, 16), "remove")){
 							spawner.waveList.RemoveAt(i);	i-=1;
 							continue;
@@ -538,8 +543,8 @@ namespace TDSTK {
 							
 							startX=cachedX;
 						}
-						
-						startX-=5;
+
+						startX -=5;
 						startY+=5;
 						
 						startX-=25;

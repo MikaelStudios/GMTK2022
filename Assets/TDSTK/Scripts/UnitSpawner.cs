@@ -85,7 +85,7 @@ namespace TDSTK{
 		private int killCount=0;        //the total unit that has been destroyed
 		public IntEvent onClearedWave;
 		public GameEvent m_onWaveWonPanelOpened;
-		
+		public StringEvent m_onUnlockedNewWeapon;
 		
 		
 		private Transform thisT;
@@ -270,6 +270,11 @@ namespace TDSTK{
 			if(waveCleared){
 				onClearedWave.Raise(currentWaveIDX + 1);
 				m_onWaveWonPanelOpened.Raise();
+				if((waveID+1) < waveList.Count && waveList[waveID].m_unlockedWeapon != null)
+                {
+					GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);
+					m_onUnlockedNewWeapon.Raise(waveList[waveID].m_unlockedWeapon.weaponName);
+				}
 				Debug.Log(gameObject.name+" - wave "+(currentWaveIDX-1)+" cleared");
 				Debug.Log("");
 			}
