@@ -24,10 +24,10 @@ public class TextmeshproEventInvoker : MonoBehaviour
             m_text = GetComponent<TextMeshProUGUI>();
     }
     bool isPlayerPrefs() { return true; }
-    private void OnEnable()
-    {
-        SetTextValue();
-    }
+    //private void OnEnable()
+    //{
+    //    SetTextValue();
+    //}
 
     public void SetTextValue()
     {
@@ -43,12 +43,23 @@ public class TextmeshproEventInvoker : MonoBehaviour
             case PlayerPrefsDataType.WAVE:
                 GetComponent<TextMeshProUGUI>().text = "Wave " + m_unitSpawner.GetCurrentWaveIndex() + " / 6";
                 break;
+            case PlayerPrefsDataType.WEAPON_CHANGED:
+                StartCoroutine(DisplayWeaponChanged());
+                break;
 
             case PlayerPrefsDataType.INT:
                 Invoke(PlayerPrefs.GetInt(m_prefKey));
                 break;
         }
     }
+
+    IEnumerator DisplayWeaponChanged()
+    {
+        GetComponent<TextMeshProUGUI>().text = "Weapon changed";
+        yield return new WaitForSeconds(0.8f);
+        GetComponent<TextMeshProUGUI>().text = "";
+    }
+
     public void Invoke(int _i)
     {
         CheckTxtObj();
@@ -140,7 +151,7 @@ public class TextmeshproEventInvoker : MonoBehaviour
     }
     public enum PlayerPrefsDataType
     {
-        FLOAT, STRING, INT, WAVE,None
+        FLOAT, STRING, INT, WAVE, WEAPON_CHANGED ,None
     }
     public enum Parameters
     {
