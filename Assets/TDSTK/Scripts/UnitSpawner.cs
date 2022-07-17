@@ -84,6 +84,7 @@ namespace TDSTK{
 		
 		private int killCount=0;        //the total unit that has been destroyed
 		public IntEvent onClearedWave;
+		public GameEvent m_onWaveWonPanelOpened;
 		
 		
 		
@@ -268,6 +269,7 @@ namespace TDSTK{
 			//if the wave is cleared
 			if(waveCleared){
 				onClearedWave.Raise(currentWaveIDX + 1);
+				m_onWaveWonPanelOpened.Raise();
 				Debug.Log(gameObject.name+" - wave "+(currentWaveIDX-1)+" cleared");
 				Debug.Log("");
 			}

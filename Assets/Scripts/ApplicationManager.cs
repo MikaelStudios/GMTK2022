@@ -66,6 +66,16 @@ public class ApplicationManager : SingletonScriptableObject<ApplicationManager>
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void PauseTime()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void UnPauseTime()
+    {
+        Time.timeScale = 1;
+    }
     public void RestartSceneWithDelay(float delay)
     {
         Timer.Register(delay, () => { LoadScene(SceneManager.GetActiveScene().buildIndex); }, useRealTime: true);
