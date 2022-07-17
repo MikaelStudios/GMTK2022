@@ -85,7 +85,7 @@ MonoBehaviour:
     explosionForce: 10
     effectID: -1
     effectIdx: -1
-  shootSFX: {fileID: 8300000, guid: ced9d3691440973459d9a7de46b79176, type: 3}
+  shootSFX: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   reloadSFX: {fileID: 8300000, guid: 35f76970bbd3dbb4f9ff3ef761889c19, type: 3}
   temporary: 0
   abilityID: 4

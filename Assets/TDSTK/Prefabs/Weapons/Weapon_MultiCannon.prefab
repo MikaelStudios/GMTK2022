@@ -404,7 +404,7 @@ MonoBehaviour:
   ammo: 300
   reloadDuration: 0
   currentReload: 0
-  recoilMagnitude: 0
+  recoilMagnitude: 1
   recoil: 1
   recoilCamShake: 1
   spread: 1
@@ -422,7 +422,7 @@ MonoBehaviour:
     explosionForce: 5
     effectID: 0
     effectIdx: -1
-  shootSFX: {fileID: 8300000, guid: 667b340e93d22ea4c80ebce683a4af5c, type: 3}
+  shootSFX: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
   reloadSFX: {fileID: 8300000, guid: 35f76970bbd3dbb4f9ff3ef761889c19, type: 3}
   temporary: 0
   abilityID: 5
