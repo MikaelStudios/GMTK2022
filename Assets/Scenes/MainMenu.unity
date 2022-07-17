@@ -243,7 +243,7 @@ Animator:
   m_GameObject: {fileID: 22537632}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04879bdda273b114cb9370478c8a916f, type: 2}
+  m_Controller: {fileID: 9100000, guid: eadbb066cefe21d488ff55a1a51979dd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
@@ -457,6 +457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 617719185278003846, guid: 25cd9a3eddce29643b9f387582dfa4be, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eadbb066cefe21d488ff55a1a51979dd, type: 2}
     - target: {fileID: 617719185278003850, guid: 25cd9a3eddce29643b9f387582dfa4be, type: 3}
       propertyPath: m_Name
       value: Button (1)
@@ -579,6 +583,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 617719185278003846, guid: 25cd9a3eddce29643b9f387582dfa4be, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eadbb066cefe21d488ff55a1a51979dd, type: 2}
     - target: {fileID: 617719185278003850, guid: 25cd9a3eddce29643b9f387582dfa4be, type: 3}
       propertyPath: m_Name
       value: Button (2)
@@ -978,7 +986,7 @@ Animator:
   m_GameObject: {fileID: 398869976}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04879bdda273b114cb9370478c8a916f, type: 2}
+  m_Controller: {fileID: 9100000, guid: eadbb066cefe21d488ff55a1a51979dd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
@@ -2099,6 +2107,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 617719185278003846, guid: 25cd9a3eddce29643b9f387582dfa4be, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eadbb066cefe21d488ff55a1a51979dd, type: 2}
     - target: {fileID: 617719185278003850, guid: 25cd9a3eddce29643b9f387582dfa4be, type: 3}
       propertyPath: m_Name
       value: Button
