@@ -2,6 +2,7 @@ using NaughtyAttributes;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using TDSTK;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class TextmeshproEventInvoker : MonoBehaviour
@@ -16,6 +17,7 @@ public class TextmeshproEventInvoker : MonoBehaviour
     [Header("PlayerPrefs")]
     [ShowIf("isPlayerPrefs")] public string m_prefKey;
     [ShowIf("isPlayerPrefs")] public PlayerPrefsDataType playerPrefsDataType;
+    public UnitSpawner m_unitSpawner;
     private void Awake()
     {
         if (!m_notObject)
@@ -39,7 +41,7 @@ public class TextmeshproEventInvoker : MonoBehaviour
                 InvokeStr(PlayerPrefs.GetString(m_prefKey));
                 break;
             case PlayerPrefsDataType.WAVE:
-                GetComponent<TextMeshProUGUI>().text = "Wave " + GetComponent<IntEventListener>().Event.m_previousValue + " / 6";
+                GetComponent<TextMeshProUGUI>().text = "Wave " + m_unitSpawner.GetCurrentWaveIndex() + " / 6";
                 break;
 
             case PlayerPrefsDataType.INT:

@@ -9134,6 +9134,7 @@ MonoBehaviour:
   m_suffix: 
   m_prefKey: 
   playerPrefsDataType: 3
+  m_unitSpawner: {fileID: 989632297}
   CountFPS: 30
   Duration: 1
   NumberFormat: N0
@@ -18054,7 +18055,7 @@ MonoBehaviour:
     creditGain: 0
     scoreGain: 0
     spawnArea: {fileID: 0}
-    m_unlockedWeapon: {fileID: 0}
+    m_unlockedWeapon: {fileID: 11456444, guid: fd09f1a85fedd2d4aa40fff4d2e91afd, type: 3}
     activeUnitCount: 0
     subWaveSpawned: 0
     spawned: 0
@@ -18167,7 +18168,7 @@ MonoBehaviour:
       interval: 1
       spawnArea: {fileID: 677687926}
     - count: 6
-      unitPrefab: {fileID: 0}
+      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 290219967}
