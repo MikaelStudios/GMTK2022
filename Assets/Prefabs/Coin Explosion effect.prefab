@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3031547048657181853}
   - component: {fileID: 8056610938369525336}
   - component: {fileID: 4527552675491286261}
+  - component: {fileID: 6653063941648213596}
   m_Layer: 0
   m_Name: Coin Explosion effect
   m_TagString: Untagged
@@ -4805,6 +4806,46 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6653063941648213596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492971157001852661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881f55a4d7950d242b46ec8fc9d3cd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAwake:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 17dfd925a291ce0478c3ef140fd7ba29, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: PlaySO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  Onenable:
+    m_PersistentCalls:
+      m_Calls: []
+  Ondisable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnapplicationQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  TargetedPlatform: 0
 --- !u!1001 &4105983437990544736
 PrefabInstance:
   m_ObjectHideFlags: 0
