@@ -32,11 +32,11 @@ public class MusicManager : MonoBehaviour
         {
             if (i == index)
             {
-                MusicChannels[wave].ads[index].DOFade(1, .35f);
+                MusicChannels[wave].ads[index].DOFade(1, .05f);
             }
             else if (MusicChannels[wave].ads[i].volume > 0)
             {
-                MusicChannels[wave].ads[i].DOFade(0, .35f);
+                MusicChannels[wave].ads[i].DOFade(0, .05f);
             }
             else
                 MusicChannels[wave].ads[i].volume = 0;
