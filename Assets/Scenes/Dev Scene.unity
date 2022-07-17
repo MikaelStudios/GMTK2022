@@ -19315,17 +19315,17 @@ MonoBehaviour:
       interval: 1
       spawnArea: {fileID: 1552199990}
     - count: 3
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: 6e42c8e8bb7de1d4588b16c75b790a05, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 1371953595}
     - count: 2
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 290219967}
     - count: 1
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: ead03c4f06a630a4baa7ec3fcb53db5c, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 677687926}
@@ -19340,7 +19340,7 @@ MonoBehaviour:
   - waveID: -1
     subWaveList:
     - count: 3
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: 6e42c8e8bb7de1d4588b16c75b790a05, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 193297653}
@@ -19350,12 +19350,12 @@ MonoBehaviour:
       interval: 1
       spawnArea: {fileID: 1017559790}
     - count: 2
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 572826398}
     - count: 4
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: ead03c4f06a630a4baa7ec3fcb53db5c, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 677687926}
@@ -19370,17 +19370,17 @@ MonoBehaviour:
   - waveID: -1
     subWaveList:
     - count: 4
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: ead03c4f06a630a4baa7ec3fcb53db5c, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 193297653}
     - count: 2
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: 6e42c8e8bb7de1d4588b16c75b790a05, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 1017559790}
     - count: 5
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 1469863667}
@@ -19400,17 +19400,17 @@ MonoBehaviour:
   - waveID: -1
     subWaveList:
     - count: 4
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: ead03c4f06a630a4baa7ec3fcb53db5c, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 193297653}
     - count: 7
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: 6e42c8e8bb7de1d4588b16c75b790a05, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 1371953595}
     - count: 5
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 677687926}
@@ -19435,30 +19435,40 @@ MonoBehaviour:
       interval: 1
       spawnArea: {fileID: 193297653}
     - count: 2
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 1552199990}
     - count: 5
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 1371953595}
     - count: 3
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+      unitPrefab: {fileID: 11429150, guid: 6e42c8e8bb7de1d4588b16c75b790a05, type: 3}
       startDelay: 0
       interval: 1
       spawnArea: {fileID: 227272935}
-    - count: 50
-      unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
+    - count: 25
+      unitPrefab: {fileID: 11429150, guid: ead03c4f06a630a4baa7ec3fcb53db5c, type: 3}
       startDelay: 0.4
       interval: 1
       spawnArea: {fileID: 572826398}
-    - count: 50
+    - count: 25
       unitPrefab: {fileID: 11429150, guid: 9afd5482bdfe14a49ac0816fe8daa2b8, type: 3}
       startDelay: 0.4
       interval: 1
       spawnArea: {fileID: 677687926}
+    - count: 25
+      unitPrefab: {fileID: 11480342, guid: 0fc2633fae019bc41b187e064aec6772, type: 3}
+      startDelay: 0
+      interval: 1
+      spawnArea: {fileID: 0}
+    - count: 25
+      unitPrefab: {fileID: 11429150, guid: 6e42c8e8bb7de1d4588b16c75b790a05, type: 3}
+      startDelay: 0
+      interval: 1
+      spawnArea: {fileID: 0}
     creditGain: 0
     scoreGain: 0
     spawnArea: {fileID: 0}
