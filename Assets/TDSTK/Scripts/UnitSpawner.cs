@@ -115,9 +115,10 @@ namespace TDSTK{
 			if(spawnMode==_SpawnMode.FreeForm || (spawnMode==_SpawnMode.WaveBased && endlessWave)){
 				if(spawnUnitList.Count==0) Debug.LogWarning("No unit has been specified for unit spawner", thisT);
 			}
+			onClearedWave.Raise(1);
 		}
-		
-		
+
+
 		void Start(){
 			InitObjectPool();
 			
