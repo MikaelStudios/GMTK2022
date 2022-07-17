@@ -269,9 +269,9 @@ namespace TDSTK{
 			//if the wave is cleared
 			if(waveCleared){
 				onClearedWave.Raise(currentWaveIDX + 1);
-				m_onWaveWonPanelOpened.Raise();
 				if((waveID+1) < waveList.Count && waveList[waveID].m_unlockedWeapon != null)
                 {
+					m_onWaveWonPanelOpened.Raise();
 					GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);
 					m_onUnlockedNewWeapon.Raise(waveList[waveID].m_unlockedWeapon.weaponName);
 				}
