@@ -571,7 +571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Text description description description description description
+  m_Text: 
 --- !u!222 &31032713
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13211,7 +13211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lbTitle: {fileID: 1064483693}
-  butContinueObj: {fileID: 0}
+  butContinueObj: {fileID: 31032710}
 --- !u!114 &627757150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36264,7 +36264,7 @@ MonoBehaviour:
   enableTextOverlay: 1
   listAllAbility: 0
   enableItemSelectTab: 1
-  showContinueButtonWhenLost: 1
+  showContinueButtonWhenLost: 0
   uiBlurEffect: {fileID: 1456755479}
   limitScale: 0
   scalerList:
