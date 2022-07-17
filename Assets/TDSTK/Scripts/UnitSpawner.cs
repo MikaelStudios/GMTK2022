@@ -270,21 +270,29 @@ namespace TDSTK{
 			
 			//if the wave is cleared
 			if(waveCleared){
-				onClearedWave.Raise(currentWaveIDX + 1);
-				if((waveID+1) < waveList.Count && waveList[waveID].m_unlockedWeapon != null)
-                {
-					unlockedPipImage.sprite = waveList[waveID].m_unlockedWeapon.icon;
+				if((waveID+1) < waveList.Count)
+				{
+					int index = currentWaveIDX + 1;
+					onClearedWave.Raise(index);
+					if(waveList[waveID].m_unlockedWeapon != null)
+						unlockedPipImage.sprite = waveList[waveID].m_unlockedWeapon.icon;
 					m_onWaveWonPanelOpened.Raise();
 					m_pips[waveID].SetActive(true);
-					GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);
-					m_onUnlockedNewWeapon.Raise(waveList[waveID].m_unlockedWeapon.weaponName);
+					if (waveList[waveID].m_unlockedWeapon != null)
+                    {
+						GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);
+						m_onUnlockedNewWeapon.Raise(waveList[waveID].m_unlockedWeapon.weaponName);
+                    }
 				}
 				Debug.Log(gameObject.name+" - wave "+(currentWaveIDX-1)+" cleared");
 				Debug.Log("");
 			}
 		}
-		
-		
+
+		public int GetCurrentWaveIndex()
+        {
+			return currentWaveIDX + 1;
+		}
 		
 		
 		
