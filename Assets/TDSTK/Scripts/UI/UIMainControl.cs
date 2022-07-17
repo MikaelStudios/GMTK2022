@@ -62,6 +62,7 @@ namespace TDSTK_UI{
 
 		private const float weaponSwitchDelay = 10f;
 		private float delayTracker = 0;
+		public StringEvent onWeaponChanged;
 		public static float GetScaleFactor(){ 
 			if(instance.scalerList.Count==0) return 1;
 			
@@ -168,6 +169,8 @@ namespace TDSTK_UI{
                     {
 						player.ScrollWeapon(Input.GetAxis("Mouse ScrollWheel") > 0 ? 1 : -1);
 						MusicManager.instance.PlayIndex(GameControl.GetPlayer().weaponList.Count - 1, GameControl.GetPlayer().weaponID);
+						if(GameControl.GetPlayer().weaponList.Count > 1)
+							onWeaponChanged.Raise(GameControl.GetPlayer().weaponList[GameControl.GetPlayer().weaponID].weaponName);
 						delayTracker = 0f;
 					}
 
