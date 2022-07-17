@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &499260
 Transform:
   m_ObjectHideFlags: 0
@@ -94,8 +94,9 @@ GameObject:
   - component: {fileID: 13645212}
   - component: {fileID: 5420804}
   - component: {fileID: 11429150}
+  - component: {fileID: 178162859854804675}
   m_Layer: 0
-  m_Name: Drone
+  m_Name: Chip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,6 +114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499260}
+  - {fileID: 8895570417126482147}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,10 +162,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisT: {fileID: 0}
   thisObj: {fileID: 0}
-  prefabID: 4
+  prefabID: 2
   instanceID: 0
   icon: {fileID: 21300000, guid: 55000da6ee415e24f8f0eb0d12a57f1a, type: 3}
-  unitName: Drone
+  unitName: Chip
   desp: 
   level: 1
   hitPointFull: 5
@@ -276,6 +278,28 @@ MonoBehaviour:
   anchorRadius: 0
   anchorPoint: {x: 0, y: 0, z: 0}
   currentAnchor: {x: 0, y: 0, z: 0}
+--- !u!114 &178162859854804675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 245a3c9939ed36646968fbbea70ef008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8895570416010781084}
+  clipIdle: {fileID: 0}
+  clipForward: {fileID: 7400000, guid: 673824a9e06965b439040085d68d7638, type: 2}
+  clipBackward: {fileID: 7400000, guid: 38488af7a1210194488b4e608126284f, type: 2}
+  clipStrafeLeft: {fileID: 0}
+  clipStrafeRight: {fileID: 0}
+  clipAttackRange: {fileID: 0}
+  clipAttackMelee: {fileID: 0}
+  clipHit: {fileID: 0}
+  clipDestroyed: {fileID: 0}
 --- !u!1 &182430
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,3 +396,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateRate: 120
   unit: {fileID: 0}
+--- !u!1001 &745151361329832018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 416576}
+    m_Modifications:
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152682040265441463, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_Name
+      value: Chip_Enemy_Blue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+--- !u!4 &8895570417126482147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+  m_PrefabInstance: {fileID: 745151361329832018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8895570416010781084 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8152682039233823182, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+  m_PrefabInstance: {fileID: 745151361329832018}
+  m_PrefabAsset: {fileID: 0}
