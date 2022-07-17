@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 11429150}
   - component: {fileID: 178162859854804675}
   m_Layer: 0
-  m_Name: Chip
+  m_Name: Chip 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 178098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.398412, y: 2.398412, z: 2.398412}
   m_Children:
   - {fileID: 499260}
   - {fileID: 8895570417126482147}
@@ -162,13 +162,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisT: {fileID: 0}
   thisObj: {fileID: 0}
-  prefabID: 2
+  prefabID: 3
   instanceID: 0
   icon: {fileID: 21300000, guid: 55000da6ee415e24f8f0eb0d12a57f1a, type: 3}
-  unitName: Chip
+  unitName: Chip1
   desp: 
   level: 1
-  hitPointFull: 5
+  hitPointFull: 20
   hitPoint: 0
   startHitPointAtFull: 1
   hpRegenRate: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   startEnergyAtFull: 1
   armorType: 0
   anchorDown: 0
-  moveSpeed: 4
+  moveSpeed: 2
   brakeRange: 0
   rotateSpeed: 135
   target: {fileID: 0}
@@ -210,8 +210,8 @@ MonoBehaviour:
   contactCurrentCD: 0
   contactAttackStats:
     damageType: 0
-    damageMin: 5
-    damageMax: 10
+    damageMin: 40
+    damageMax: 40
     aoeRadius: 0
     diminishingAOE: 1
     critChance: 0
@@ -403,6 +403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 416576}
     m_Modifications:
+    - target: {fileID: 7414526697437671320, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c7422493067dd0e4d8a547eaeaf56ebe, type: 2}
     - target: {fileID: 8152682040265441457, guid: 9d78020feadd9be4aa652bcafcf0ca95, type: 3}
       propertyPath: m_RootOrder
       value: 1
