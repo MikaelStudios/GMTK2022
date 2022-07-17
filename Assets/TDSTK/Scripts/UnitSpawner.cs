@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 using TDSTK;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace TDSTK{
 	
@@ -87,6 +88,7 @@ namespace TDSTK{
 		public GameEvent m_onWaveWonPanelOpened;
 		public StringEvent m_onUnlockedNewWeapon;
 		public List<GameObject> m_pips;
+		public Image unlockedPipImage;
 		
 		private Transform thisT;
 		void Awake(){
@@ -271,6 +273,7 @@ namespace TDSTK{
 				onClearedWave.Raise(currentWaveIDX + 1);
 				if((waveID+1) < waveList.Count && waveList[waveID].m_unlockedWeapon != null)
                 {
+					unlockedPipImage.sprite = waveList[waveID].m_unlockedWeapon.icon;
 					m_onWaveWonPanelOpened.Raise();
 					m_pips[waveID].SetActive(true);
 					GameControl.GetPlayer().AddWeapon(waveList[waveID].m_unlockedWeapon);
