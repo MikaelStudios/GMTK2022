@@ -59,6 +59,9 @@ namespace TDSTK_UI{
 		
 		[Tooltip("The CanvasScaler components of all the canvas. Required to have the floating UI elements appear in the right screen position")]
 		public List<CanvasScaler> scalerList=new List<CanvasScaler>();
+
+		private const float weaponSwitchDelay = 5f;
+		private float delayTracker = 0;
 		public static float GetScaleFactor(){ 
 			if(instance.scalerList.Count==0) return 1;
 			
@@ -153,16 +156,22 @@ namespace TDSTK_UI{
 					
 					//brake
 					if(Input.GetKey(KeyCode.Space)) player.Brake();
-					
+
 					//switch weapon
-					if(Input.GetAxisRaw("Mouse ScrollWheel")!=0 && scrollCD<=0){
-						player.ScrollWeapon(Input.GetAxis("Mouse ScrollWheel")>0 ? 1 : -1);
-						scrollCD=0.15f;
+					//if(Input.GetAxisRaw("Mouse ScrollWheel")!=0 && scrollCD<=0){
+					//	player.ScrollWeapon(Input.GetAxis("Mouse ScrollWheel")>0 ? 1 : -1);
+					//	scrollCD=0.15f;
+					//}
+					//scrollCD-=Time.deltaTime;
+					delayTracker += Time.deltaTime;
+					if(delayTracker >= weaponSwitchDelay)
+                    {
+						player.ScrollWeapon(Input.GetAxis("Mouse ScrollWheel") > 0 ? 1 : -1);
+						delayTracker = 0f;
 					}
-					scrollCD-=Time.deltaTime;
-					
+
 					//string[] names = Input.GetJoystickNames();
-					bool hasJoystick=false;//names.Length>0 ? true : false ;
+					bool hasJoystick =false;//names.Length>0 ? true : false ;
 					
 					//turret facing
 					if(hasJoystick){
