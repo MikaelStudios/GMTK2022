@@ -4815,7 +4815,7 @@ MonoBehaviour:
   state: 0
   thisT: {fileID: 0}
   thisObj: {fileID: 0}
-  speed: 10
+  speed: 20
   delayBeforeDestroy: 0
   trackingDuration: 1
   spread: 1

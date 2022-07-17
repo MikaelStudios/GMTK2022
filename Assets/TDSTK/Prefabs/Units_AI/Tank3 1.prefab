@@ -99,7 +99,7 @@ MonoBehaviour:
   startEnergyAtFull: 1
   armorType: 0
   anchorDown: 0
-  moveSpeed: 3
+  moveSpeed: 5
   brakeRange: 8
   rotateSpeed: 45
   target: {fileID: 0}
@@ -111,8 +111,8 @@ MonoBehaviour:
   turretObj: {fileID: 0}
   smoothTurretRotation: 1
   turretTrackingSpeed: 75
-  range: 40
-  cooldown: 10
+  range: 100
+  cooldown: 7
   attackStats:
     damageType: 0
     damageMin: 5
